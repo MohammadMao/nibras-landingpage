@@ -4,6 +4,10 @@
   font-weight: bold;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 body {
   background-color: #ffffff;
   font-family: "Cairo", sans-serif;
@@ -49,7 +53,7 @@ section {
 .nibras-title {
   font-family: "SamimBold", sans-serif;
   font-size: 4rem;
-  white-space: nowrap; /* يمنع كسر النص */
+  white-space: nowrap;
 }
 
 @media (max-width: 768px) {
@@ -60,7 +64,7 @@ section {
 
 .nibras-subtitle {
   font-size: 2rem;
-  white-space: nowrap; /* يمنع كسر النص */
+  white-space: nowrap;
 }
 
 @media (max-width: 768px) {
@@ -202,8 +206,8 @@ h2 {
 
 .map-container iframe {
   width: 100%;
-  height: 100%;
-  min-height: 350px;
+  height: 80%;
+  min-height: 400px;
 }
 
 
