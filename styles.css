@@ -88,7 +88,7 @@ h2 {
   /* width: 80%; */
   max-width: 350px;
   position: relative;
-  bottom: -20px; /* يخليها طالعة من تحت */
+  bottom: -20px;
   animation: slideUp 1.2s ease-out;
 }
 
@@ -97,6 +97,7 @@ h2 {
     max-width: 200px; /* أصغر على الشاشات الصغيرة */
     bottom: 20px;    /* تعديل البروز */
     top: 10px;
+    padding-bottom: 20px;
   }
 }
 
