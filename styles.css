@@ -1,0 +1,214 @@
+@font-face {
+  font-family: "SamimBold";
+  src: url("assets/fonts/Samim-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: "Cairo", sans-serif;
+}
+.navbar {
+  background-color: #08a0df;
+}
+.navbar-brand,
+.nav-link {
+  color: #fff !important;
+  font-weight: bold;
+}
+section {
+  padding: 60px 0;
+}
+.hero-carousel {
+  position: relative;
+  padding: 0;
+}
+
+.hero-slide {
+  height: 90vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero-slide .overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.hero-carousel .content {
+  position: absolute;
+  z-index: 2;
+  max-width: 700px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.nibras-title {
+  font-family: "SamimBold", sans-serif;
+  font-size: 4rem;
+  white-space: nowrap; /* يمنع كسر النص */
+}
+
+@media (max-width: 768px) {
+  .nibras-title {
+    font-size: 2rem; /* أصغر على الموبايل */
+  }
+}
+
+.nibras-subtitle {
+  font-size: 2rem;
+  white-space: nowrap; /* يمنع كسر النص */
+}
+
+@media (max-width: 768px) {
+  .nibras-subtitle {
+    font-size: 1.5rem; /* أصغر على الموبايل */
+  }
+}
+
+
+h2 {
+  color: #08a0df;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.offers-section {
+  padding: 0;
+  background-color: #ffffff; /* خلفية بيضاء */
+  position: relative;
+  overflow: hidden; /* عشان الصورة ممكن تخرج من القسم */
+}
+
+.offer-img {
+  /* width: 80%; */
+  max-width: 350px;
+  position: relative;
+  bottom: -20px; /* يخليها طالعة من تحت */
+  animation: slideUp 1.2s ease-out;
+}
+
+@media (max-width: 576px) {
+  .offer-img {
+    max-width: 200px; /* أصغر على الشاشات الصغيرة */
+    bottom: 20px;    /* تعديل البروز */
+    top: 10px;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.products-section {
+    background-color: #f8f9fa;
+}
+
+.product-card {
+  border: none;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.product-card img {
+  max-height: 200px;
+  object-fit: contain;
+  padding: 15px;
+}
+
+#productsCarousel .carousel-control-prev-icon::after {
+  content: '❯'; /* السهم السابق */
+  font-size: 2rem;
+  color: #08a0df; /* اللون الذي تريده */
+}
+
+#productsCarousel .carousel-control-next-icon::after {
+  content: '❮'; /* السهم التالي */
+  font-size: 2rem;
+  color: #08a0df; /* اللون الذي تريده */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  z-index: 5;
+}
+
+#productsCarousel .carousel-control-prev {
+  left: -30px; /* move prev arrow more to the right */
+}
+
+#productsCarousel .carousel-control-next {
+  right: -30px; /* move next arrow more to the left */
+}
+
+.services-section {
+  padding: 80px 0;
+  background-color: #fff;
+}
+
+.service-card {
+  border: none;
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #f8f9fa;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.service-card .icon {
+  font-size: 40px;
+  color: #08a0df;
+}
+
+
+.qr-code {
+  border-radius: 12px;
+  padding: 5px;
+  background: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .qr-code {
+    max-width: 200px;
+  }
+}
+
+/* تأثير Hover */
+.qr-code:hover {
+  transform: scale(1.05);
+}
+
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 350px;
+}
+
+
+footer {
+  background-color: #08a0df;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
